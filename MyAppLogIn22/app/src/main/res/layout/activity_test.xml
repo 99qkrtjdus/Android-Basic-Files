@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff0"
+    >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/login"
+        android:layout_centerInParent="true"
+        android:id="@+id/img"/>
+
+    <ImageView
+        android:id="@+id/left"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/james"
+        android:layout_toLeftOf="@id/img"
+        android:layout_alignTop="@id/img"
+        android:layout_marginRight="16dp"/>
+
+    <ImageView
+        android:id="@+id/right"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/james"
+        android:layout_toRightOf="@id/img"
+        android:layout_alignTop="@id/img"
+        android:layout_marginLeft="16dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/james"
+        android:layout_above="@id/img"
+        android:layout_alignLeft="@id/img"
+        android:layout_alignRight="@id/img"
+        android:layout_marginBottom="16dp"/>
+
+     <ImageView
+         android:id="@+id/james"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/james"
+        android:layout_below="@id/img"
+        android:layout_alignLeft="@id/img"
+        android:layout_alignRight="@id/img"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/james"
+        android:layout_below="@id/james"
+        android:layout_alignLeft="@id/james"
+        android:layout_alignRight="@id/img"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/james"
+        android:layout_toLeftOf="@id/left"
+        android:layout_alignTop="@id/left"
+        android:layout_marginRight="16dp"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/james"
+        android:layout_toRightOf="@id/right"
+        android:layout_alignTop="@id/right"
+        android:layout_marginLeft="16dp" />
+
+
+
+
+</RelativeLayout>

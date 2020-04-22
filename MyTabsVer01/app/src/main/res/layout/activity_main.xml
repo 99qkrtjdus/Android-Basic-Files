@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/btnWrap"
+        android:id="@+id/frameLayout">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnWrap"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:padding="6dp"
+        android:background="#eee">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:onClick="clickHandler"
+            android:gravity="center"
+            android:id="@+id/btnHome">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_home_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOME"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:onClick="clickHandler"
+            android:gravity="center"
+            android:id="@+id/btnLogin">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_lock_open_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:onClick="clickHandler"
+            android:gravity="center"
+            android:id="@+id/btnMy">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_account_circle_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MY"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:onClick="clickHandler"
+            android:gravity="center"
+            android:id="@+id/btnWeather">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_filter_drama_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WEATHER"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
