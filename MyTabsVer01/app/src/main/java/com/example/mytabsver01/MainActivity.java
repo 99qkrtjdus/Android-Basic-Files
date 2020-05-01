@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private FragmentA_Activity fragment_a;
     private FragmentB_Activity fragment_b;
     private FragmentC_Activity fragment_c;
+    private FragmentD_Activity fragment_d;
     private FragmentTransaction transaction;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         fragment_a = new FragmentA_Activity();
         fragment_b = new FragmentB_Activity();
         fragment_c = new FragmentC_Activity();
+        fragment_d = new FragmentD_Activity();
         transaction = fragmentManager.beginTransaction();
 
         transaction.replace(R.id.frameLayout,fragment_a).commitAllowingStateLoss();
@@ -44,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.btnMy:
                 transaction.replace(R.id.frameLayout,fragment_c).commitAllowingStateLoss();
+                break;
+            case R.id.btnWeather:
+                transaction.replace(R.id.frameLayout,fragment_d).commitAllowingStateLoss();
                 break;
         }
     }
